@@ -11,7 +11,7 @@ export default function Home({ story, headerMenu }) {
   story = useStoryblokState(story);
 
   return (
-    <div className="container">
+    <div className="">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

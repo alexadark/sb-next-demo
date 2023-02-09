@@ -5,6 +5,7 @@ import Page from "~/components/Page";
 import Teaser from "~/components/Teaser";
 import Feature from "~/components/Feature";
 import MenuLink from "~/components/MenuLink";
+import Hero from "~/components/Hero";
 
 const components = {
   feature: Feature,
@@ -12,6 +13,7 @@ const components = {
   teaser: Teaser,
   page: Page,
   menu_link: MenuLink,
+  hero: Hero,
 };
 
 storyblokInit({
