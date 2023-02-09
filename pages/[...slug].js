@@ -7,7 +7,7 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
 
-export default function Page({ story }) {
+export default function Page({ story, headerMenu }) {
   story = useStoryblokState(story);
 
   return (
@@ -15,8 +15,9 @@ export default function Page({ story }) {
       <Head>
         <title>{story ? story.name : "My Site"}</title>
         <link rel="icon" href="/favicon.ico" />
+        ``
       </Head>
-      <Layout>
+      <Layout headerMenu={headerMenu}>
         <StoryblokComponent blok={story.content} />
       </Layout>
     </div>
@@ -28,15 +29,17 @@ export async function getStaticProps({ params }) {
 
   let sbParams = {
     version: "draft", // or 'published'
+    resolve_links: "url",
   };
 
   const storyblokApi = getStoryblokApi();
   let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams);
+  let { data: config } = await storyblokApi.get("cdn/stories/config");
 
   return {
     props: {
       story: data ? data.story : false,
-      key: data ? data.story.id : false,
+      headerMenu: config?.story?.content?.header_menu,
     },
     revalidate: 3600,
   };

@@ -1,12 +1,10 @@
 import Footer from "./Footer";
 import Header from "./Header";
 
-Footer;
-
-const Layout = ({ children }) => {
+const Layout = ({ children, headerMenu }) => {
   return (
     <div>
-      <Header />
+      <Header headerMenu={headerMenu} />
       {children}
       <Footer />
     </div>
