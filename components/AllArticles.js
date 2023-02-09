@@ -15,7 +15,6 @@ const AllArticles = ({ blok }) => {
 
       setArticles(() =>
         data.stories.map((article) => {
-          article.content.full_slug = article.full_slug;
           return article;
         })
       );
@@ -31,7 +30,7 @@ const AllArticles = ({ blok }) => {
       >
         {articles[0] &&
           articles.map((article) => (
-            <ArticleTeaser article={article.content} key={article.uuid} />
+            <ArticleTeaser article={article} key={article.uuid} />
           ))}
       </div>
     </>

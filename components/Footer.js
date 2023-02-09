@@ -1,12 +1,9 @@
 const Footer = () => (
-  <footer
-    className="block w-full bg-white lg:absolute lg:bottom-0"
-    aria-labelledby="footer-heading"
-  >
+  <footer className="block w-full bg-white " aria-labelledby="footer-heading">
     <h2 id="footer-heading" className="sr-only">
       Footer
     </h2>
-    <div className="px-12 py-12 mx-auto  max-w-7xl lg:py-16 lg:px-20">
+    <div className="px-12 py-12 mx-auto max-w-7xl lg:py-16 lg:px-20">
       <div className="grid grid-cols-2 md:grid-cols-4 md:gap-8">
         <div className="mt-12 md:mt-0">
           <h3 className="text-xs font-semibold tracking-wider text-blue-600 uppercase">

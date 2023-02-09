@@ -12,9 +12,7 @@ const PopularArticles = ({ blok }) => {
         {...storyblokEditable(blok)}
       >
         {blok.articles.map((article) => {
-          article.content.full_slug = article.full_slug;
-
-          return <ArticleTeaser article={article.content} key={article.uuid} />;
+          return <ArticleTeaser article={article} key={article.uuid} />;
         })}
       </div>
     </div>
