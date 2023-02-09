@@ -29,7 +29,7 @@ export async function getStaticProps({ params }) {
 
   let sbParams = {
     version: "draft", // or 'published'
-    resolve_links: "url",
+    resolve_relations: ["popular_articles.articles"],
   };
 
   const storyblokApi = getStoryblokApi();

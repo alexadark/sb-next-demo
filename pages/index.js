@@ -28,8 +28,8 @@ export async function getStaticProps() {
   let slug = "home";
 
   let sbParams = {
-    version: "draft", // or 'published'
-    resolve_links: "url",
+    version: "draft", // or 'published',
+    resolve_relations: ["popular_articles.articles"],
   };
 
   const storyblokApi = getStoryblokApi();
