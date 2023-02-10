@@ -2,7 +2,6 @@ import { storyblokEditable } from "@storyblok/react";
 import Image from "next/image";
 
 const Feature = ({ blok }) => {
-  console.log("feature", blok);
   return (
     <div className="column feature" {...storyblokEditable(blok)}>
       <div className="p-6">
