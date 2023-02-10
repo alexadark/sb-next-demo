@@ -5,6 +5,7 @@ const Hero = ({ blok }) => {
   return (
     <div
       {...storyblokEditable(blok)}
+      key={blok._uid}
       className={`min-h-[500px]
     relative
     flex

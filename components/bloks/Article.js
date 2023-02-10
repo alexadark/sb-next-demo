@@ -1,9 +1,14 @@
 import { render } from "storyblok-rich-text-react-renderer";
 import Image from "next/image";
+import { storyblokEditable } from "@storyblok/react";
 
 const Article = ({ blok }) => {
   return (
-    <section className="text-gray-600 body-font">
+    <section
+      className="text-gray-600 body-font"
+      {...storyblokEditable(blok)}
+      key={blok._uid}
+    >
       <div className="container flex flex-col items-center justify-center px-5 py-24 mx-auto">
         <Image
           className="object-cover object-center w-full mb-10 rounded md:h-96"

@@ -22,7 +22,7 @@ const AllArticles = ({ blok }) => {
     getArticles();
   }, []);
   return (
-    <>
+    <div {...storyblokEditable(blok)} key={blok._uid}>
       <p className="text-3xl">{blok.title}</p>
       <div
         className="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3 lg:px-24 md:px-16"
@@ -33,7 +33,7 @@ const AllArticles = ({ blok }) => {
             <ArticleTeaser article={article} key={article.uuid} />
           ))}
       </div>
-    </>
+    </div>
   );
 };
 export default AllArticles;

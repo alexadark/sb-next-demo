@@ -3,7 +3,11 @@ import { storyblokEditable } from "@storyblok/react";
 
 const PopularArticles = ({ blok }) => {
   return (
-    <div className="py-16 my-16 bg-slate-50">
+    <div
+      className="py-16 my-16 bg-slate-50"
+      {...storyblokEditable(blok)}
+      key={blok._uid}
+    >
       <h1 className="text-2xl font-bold text-center uppercase">
         Popular Articles
       </h1>

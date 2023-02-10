@@ -3,7 +3,11 @@ import Image from "next/image";
 
 const Feature = ({ blok }) => {
   return (
-    <div className="column feature" {...storyblokEditable(blok)}>
+    <div
+      className="column feature"
+      {...storyblokEditable(blok)}
+      key={blok._uid}
+    >
       <div className="p-6">
         <Image
           className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
