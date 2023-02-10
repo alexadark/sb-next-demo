@@ -15,7 +15,6 @@ export default function Page({ story, headerMenu }) {
       <Head>
         <title>{story ? story.name : "My Site"}</title>
         <link rel="icon" href="/favicon.ico" />
-        ``
       </Head>
       <Layout headerMenu={headerMenu}>
         <StoryblokComponent blok={story.content} />
