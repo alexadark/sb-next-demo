@@ -25,9 +25,6 @@ const Hero = ({ blok }) => {
       <Image
         src={`${blok.background_image.filename}/m/1920x600/filters:brightness(${blok.brightness})`}
         fill
-        // width="0"
-        // height="0"
-        // sizes="100vw"
         alt={blok.background_image.alt}
         className="absolute top-0 left-0 z-0 object-cover w-full h-full"
       />
