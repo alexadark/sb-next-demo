@@ -1,4 +1,4 @@
-import ArticleTeaser from "./ArticleTeaser";
+import ArticleTeaser from "../ArticleTeaser";
 import { getStoryblokApi, storyblokEditable } from "@storyblok/react";
 
 import { useState, useEffect } from "react";

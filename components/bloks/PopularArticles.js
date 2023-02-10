@@ -1,4 +1,4 @@
-import ArticleTeaser from "./ArticleTeaser";
+import ArticleTeaser from "../ArticleTeaser";
 import { storyblokEditable } from "@storyblok/react";
 
 const PopularArticles = ({ blok }) => {

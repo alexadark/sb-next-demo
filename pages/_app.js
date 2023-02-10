@@ -1,14 +1,14 @@
 import "~/styles/globals.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
-import Grid from "~/components/Grid";
-import Page from "~/components/Page";
-import Teaser from "~/components/Teaser";
-import Feature from "~/components/Feature";
-import MenuLink from "~/components/MenuLink";
-import Hero from "~/components/Hero";
-import Article from "~/components/Article";
-import AllArticles from "~/components/AllArticles";
-import PopularArticles from "~/components/PopularArticles";
+import Grid from "~/components/bloks/Grid";
+import Page from "~/components/bloks/Page";
+import Teaser from "~/components/bloks/Teaser";
+import Feature from "~/components/bloks/Feature";
+import MenuLink from "~/components/bloks/MenuLink";
+import Hero from "~/components/bloks/Hero";
+import Article from "~/components/bloks/Article";
+import AllArticles from "~/components/bloks/AllArticles";
+import PopularArticles from "~/components/bloks/PopularArticles";
 
 const components = {
   feature: Feature,
